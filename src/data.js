@@ -161,6 +161,8 @@ en:{
  footer_mono:"DECISIONS, NOT DESTINY · SAMPLE DEMO DATA",
  footer_explore:"EXPLORE", footer_more:"MORE",
  footer_designathon:"Designed for RIT × TWE DesignAthon 2026",
+ ai_fab_label:"Ask Orbit AI", ai_title:"Orbit AI", ai_subtitle:"Quick answers about Orbit", ai_close:"Close", ai_back:"← Ask something else",
+ ai_disclaimer:"Preset answers, not a live chat.",
  tour_skip:"Skip tour", tour_back:"Back", tour_next:"Next", tour_finish:"Let's go →",
  tour_1_t:"Start with Build My Path", tour_1_d:"Tell ORBIT what you study, what you're curious about, and what you're good at — this is where your possibility space begins.",
  tour_2_t:"Explore Careers", tour_2_d:"Browse careers with a live match score based on your profile, and see why each one fits.",
@@ -295,8 +297,27 @@ ar:{
  tour_10_t:"لماذا أوربت", tour_10_d:"المشكلة التي يحلها أوربت، والأبحاث التي تستند إليها.",
  tour_11_t:"المحفوظات", tour_11_d:"كل ما تحفظه أثناء التصفح — المهن والتخصصات والجامعات — موجود هنا.",
  tour_12_t:"إمكانية الوصول", tour_12_d:"بدّل بين الإنجليزية والعربية، أعد تشغيل هذه الجولة في أي وقت، أو بدّل بين الوضع الداكن والفاتح — كلها مصممة لإمكانية الوصول.",
- tour_mobile_t:"كل شيء في القائمة", tour_mobile_d:"اضغط هنا في أي وقت للانتقال إلى المهن، الكوكبة، ماذا لو، الجامعات، والمزيد."
+ tour_mobile_t:"كل شيء في القائمة", tour_mobile_d:"اضغط هنا في أي وقت للانتقال إلى المهن، الكوكبة، ماذا لو، الجامعات، والمزيد.",
+ ai_fab_label:"اسأل أوربت الذكي", ai_title:"أوربت الذكي", ai_subtitle:"إجابات سريعة حول أوربت", ai_close:"إغلاق", ai_back:"← اسأل شيئًا آخر",
+ ai_disclaimer:"إجابات معدة مسبقًا، وليست محادثة حية."
 }
+};
+
+export const ORBIT_AI_QA = {
+en:[
+  { id:"what", q:"What is Orbit?", a:"Orbit connects what you study, what interests you, and what you're good at with careers, degrees, and universities — so you can see multiple possible futures instead of one path." },
+  { id:"build", q:"How do I build my path?", a:"Tap \"Build My Path\" and pick your subjects, interests, and strengths across a few quick steps. Orbit instantly generates career matches and recommended destinations from your answers." },
+  { id:"match", q:"How are matches calculated?", a:"Each career, degree, and university gets a match score from how closely its required subjects, skills, and interests overlap with your profile. Change your profile and matches recalculate instantly." },
+  { id:"whatif", q:"What does \"What If\" do?", a:"What If lets you test a hypothetical profile — add or remove subjects and interests — and watch your possibility space shift, without touching your real saved profile." },
+  { id:"privacy", q:"Is my data saved anywhere?", a:"Your profile and saved items are stored locally in your browser only. Nothing is uploaded — clearing your browser storage clears your Orbit data too." },
+],
+ar:[
+  { id:"what", q:"ما هو أوربت؟", a:"يربط أوربت ما تدرسه، وما يثير اهتمامك، وما تجيده بالمهن والتخصصات والجامعات — لتتمكن من رؤية مستقبلات متعددة بدلاً من مسار واحد." },
+  { id:"build", q:"كيف أبني مساري؟", a:"اضغط على \"ابنِ مساري\" واختر موادك واهتماماتك ونقاط قوتك عبر بضع خطوات سريعة. يُنشئ أوربت فورًا تطابقات مهنية ووجهات موصى بها بناءً على إجاباتك." },
+  { id:"match", q:"كيف تُحسب درجات التطابق؟", a:"تحصل كل مهنة وتخصص وجامعة على درجة تطابق بناءً على مدى تداخل موادها ومهاراتها المطلوبة مع ملفك الشخصي. عند تغيير ملفك تُعاد حساب التطابقات فورًا." },
+  { id:"whatif", q:"ما الذي تفعله ميزة \"ماذا لو\"؟", a:"تتيح لك ميزة \"ماذا لو\" تجربة ملف شخصي افتراضي — بإضافة أو حذف مواد واهتمامات — ومشاهدة فضاء احتمالاتك يتغيّر، دون المساس بملفك الحقيقي المحفوظ." },
+  { id:"privacy", q:"هل تُحفظ بياناتي في مكان ما؟", a:"يُخزَّن ملفك الشخصي وعناصرك المحفوظة محليًا في متصفحك فقط. لا يُرفع شيء إلى الخادم — ومسح تخزين المتصفح يمسح بيانات أوربت أيضًا." },
+]
 };
 
 export function universitiesForCareer(career){

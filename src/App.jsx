@@ -6,6 +6,7 @@ import ConstellationBG from './components/ConstellationBG';
 import SiteLoader from './components/SiteLoader';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import OrbitAI from './components/OrbitAI';
 
 import Home from './pages/Home';
 import Build from './pages/Build';
@@ -72,6 +73,7 @@ export default function App() {
           </FadeWrapper>
         </main>
         <Footer />
+        <OrbitAI />
       </TourProvider>
     </OrbitProvider>
   );
